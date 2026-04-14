@@ -5,7 +5,7 @@
 - 💻 **Frontend**  
   👉 [Frontend](https://github.com/Jmurcia435/shopping-cart-frontend/tree/dev)
 
-- ⚙️ **Backend (Servicios distribuidos)**  
+- ⚙️ **Backend**  
   👉 [Backend](https://github.com/Jmurcia435/shopping-cart-backend/tree/dev)
 
 ---
