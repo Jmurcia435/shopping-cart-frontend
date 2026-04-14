@@ -1,133 +1,75 @@
-# Frontend React Setup Guide
+# 🚀 Redireccionamiento a nuestros otros repositorios:
+- 🗄️ **Base de datos**  
+  👉 [Base de datos](https://github.com/Jmurcia435/shopping-cart-bd/tree/dev)
 
-## Quick Start
+- 💻 **Frontend (Interfaz POS)**  
+  👉 [Frontend](https://github.com/Jmurcia435/shopping-cart-frontend/tree/dev)
 
-1. **Install dependencies:**
-   ```bash
-   npm install
-   ```
+- ⚙️ **Backend (Servicios distribuidos)**  
+  👉 [Backend](https://github.com/Jmurcia435/shopping-cart-backend/tree/dev)
 
-2. **Start development server:**
-   ```bash
-   npm start
-   ```
+---
 
-Frontend will open on `http://localhost:3000`
+# 💻 Frontend React
 
-## Configuration
+Interfaz de usuario desarrollada en React para el sistema, enfocada en la gestión de productos, carrito de compras y proceso de checkout, con integración directa al backend mediante API.
 
-The frontend automatically proxies API calls to the backend via the `proxy` setting in `package.json`.
+## 📖 Descripción del Proyecto
 
-To use a different backend URL:
-```bash
-REACT_APP_API_URL=http://your-server:5000/api npm start
-```
+El Frontend React permite a los usuarios interactuar con el sistema de ventas de manera intuitiva y eficiente.
 
-## Features
+Incluye funcionalidades clave como:
 
-### Product Browsing
-- Displays all products from the backend
-- Shows product name, description, price, category, and stock
-- Grid layout with responsive design
+-🛍️ Visualización de productos disponibles
+-🛒 Gestión de carrito de compras
+-💳 Proceso de checkout
+-🔗 Integración con servicios backend mediante API
 
-### Shopping Cart
-- Add products to cart
-- Adjust quantities with +/- buttons
-- Remove items
-- View cart summary with subtotal, tax estimate, and total
+Está diseñado con un enfoque responsive y moderno para adaptarse a diferentes dispositivos.
 
-### Checkout
-- Save orders to database
-- Success notification on successful checkout
-- Cart clears after successful order
+---
 
-## File Structure
+# ✨ Funcionalidades
 
-```
-frontend/src/
-├── index.js              - React entry point
-├── App.jsx               - Main app component
-├── App.css               - Main styles
-├── api.js                - API service (axios instance)
-└── components/
-    ├── ProductList.jsx   - Product grid display
-    ├── ProductList.css
-    ├── ShoppingCart.jsx  - Shopping cart sidebar
-    └── ShoppingCart.css
-```
+## 🛍️ Gestión de Productos
+Visualización de todos los productos desde el backend
+Información detallada: nombre, descripción, precio, categoría y stock
+Diseño en cuadrícula responsive
 
-## Key Components
+## 🛒 Carrito de Compras
+Agregar productos al carrito
+Ajustar cantidades (+ / -)
+Eliminar productos
+Resumen de compra (subtotal, impuestos, total)
 
-### App.jsx
-Main component that manages:
-- Product list state
-- Shopping cart state
-- API calls to backend
-- Checkout functionality
+## 💳 Checkout
+Registro de órdenes en la base de datos
+Notificación de compra exitosa
+Limpieza automática del carrito
 
-### ProductList.jsx
-Displays available products in a grid with:
-- Product image/card
-- Name, description, price
-- Category badge
-- Stock information
-- Add to cart button
+---
 
-### ShoppingCart.jsx
-Sidebar shopping cart with:
-- List of cart items
-- Quantity adjusters
-- Remove item buttons
-- Order summary
-- Checkout button
+# 🗂️ Estructura del Proyecto
 
-## Dependencies
+## 🧩 Componentes Principales
 
-- **react** - UI library
-- **react-dom** - React DOM rendering
-- **axios** - HTTP client for API calls
-- **react-scripts** - Build tools
+🔹 App.jsx
+Componente principal encargado de:
+Manejo del estado de productos
+Gestión del carrito
+Consumo de la API
+Proceso de checkout
 
-## Development
+🔹 ProductList.jsx
+Encargado de mostrar los productos:
+Tarjetas de producto
+Información detallada
+Botón para agregar al carrito
 
-### Hot Module Reloading
-Changes to `src/` files automatically reload in the browser.
-
-### Build for Production
-```bash
-npm run build
-```
-
-Creates optimized build in `build/` folder.
-
-## Environment Variables
-
-Create `.env` file (optional):
-```
-REACT_APP_API_URL=http://localhost:5000/api
-```
-
-## Styling
-
-All components use CSS files with:
-- Modern flexbox/grid layouts
-- Gradient backgrounds
-- Responsive design
-- Hover effects and transitions
-
-## Troubleshooting
-
-### Backend connection error
-- Ensure backend is running on `http://localhost:5000`
-- Check CORS is enabled in backend
-- Verify proxy in package.json points to backend
-
-### Products not loading
-- Check network tab in DevTools
-- Verify `/api/products` endpoint responds
-- Check backend logs for errors
-
-### Cart not working
-- Open browser console for JavaScript errors
-- Check if API calls are being made
-- Verify checkout response in network tab
+🔹 ShoppingCart.jsx
+Carrito lateral que incluye:
+Lista de productos seleccionados
+Control de cantidades
+Eliminación de productos
+Resumen del pedido
+Botón de checkout
