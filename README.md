@@ -20,10 +20,10 @@ El Frontend React permite a los usuarios interactuar con el sistema de ventas de
 
 Incluye funcionalidades clave como:
 
--🛍️ Visualización de productos disponibles
--🛒 Gestión de carrito de compras
--💳 Proceso de checkout
--🔗 Integración con servicios backend mediante API
+- 🛍️ Visualización de productos disponibles
+- 🛒 Gestión de carrito de compras
+- 💳 Proceso de checkout
+- 🔗 Integración con servicios backend mediante API
 
 Está diseñado con un enfoque responsive y moderno para adaptarse a diferentes dispositivos.
 
@@ -32,44 +32,43 @@ Está diseñado con un enfoque responsive y moderno para adaptarse a diferentes 
 # ✨ Funcionalidades
 
 ## 🛍️ Gestión de Productos
-Visualización de todos los productos desde el backend
-Información detallada: nombre, descripción, precio, categoría y stock
-Diseño en cuadrícula responsive
+- Visualización de todos los productos desde el backend
+- Información detallada: nombre, descripción, precio, categoría y stock
+- Diseño en cuadrícula responsive
 
 ## 🛒 Carrito de Compras
-Agregar productos al carrito
-Ajustar cantidades (+ / -)
-Eliminar productos
-Resumen de compra (subtotal, impuestos, total)
+- Agregar productos al carrito
+- Ajustar cantidades (+ / -)
+- Eliminar productos
+- Resumen de compra (subtotal, impuestos, total)
 
 ## 💳 Checkout
-Registro de órdenes en la base de datos
-Notificación de compra exitosa
-Limpieza automática del carrito
+- Registro de órdenes en la base de datos
+- Notificación de compra exitosa
+- Limpieza automática del carrito
 
 ---
 
 # 🗂️ Estructura del Proyecto
 
 ## 🧩 Componentes Principales
-
-🔹 App.jsx
+### App.jsx
 Componente principal encargado de:
-Manejo del estado de productos
-Gestión del carrito
-Consumo de la API
-Proceso de checkout
+- Manejo del estado de productos
+- Gestión del carrito
+- Consumo de la API
+- Proceso de checkout
 
-🔹 ProductList.jsx
+### ProductList.jsx
 Encargado de mostrar los productos:
-Tarjetas de producto
-Información detallada
-Botón para agregar al carrito
+- Tarjetas de producto
+- Información detallada
+- Botón para agregar al carrito
 
-🔹 ShoppingCart.jsx
+### ShoppingCart.jsx
 Carrito lateral que incluye:
-Lista de productos seleccionados
-Control de cantidades
-Eliminación de productos
-Resumen del pedido
-Botón de checkout
+- Lista de productos seleccionados
+- Control de cantidades
+- Eliminación de productos
+- Resumen del pedido
+- Botón de checkout
