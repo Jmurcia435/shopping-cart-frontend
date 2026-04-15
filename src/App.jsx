@@ -68,6 +68,7 @@ function App() {
     try {
       setCheckoutLoading(true);
       await checkout(cart, null);
+      await loadProducts();
       setCheckoutSuccess(true);
       setCart([]);
       setTimeout(() => setCheckoutSuccess(false), 3000);
